@@ -297,7 +297,7 @@ ul {
 .section {
   height: 100vh;
   width: 100vw;
-  padding: 8vh 8vh 8vh 8vh;
+  padding: 8vh 8vw 8vh 8vw;
 }
 
 .btn {
