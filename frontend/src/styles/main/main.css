@@ -297,7 +297,7 @@ ul {
 .section {
   height: 100vh;
   width: 100vw;
-  padding: 8vh 8vw 8vh 8vw;
+  padding: 8vh 8vh 8vh 8vh;
 }
 
 .btn {
@@ -329,7 +329,7 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 0;
+  padding-bottom: 16vh;
   overflow: hidden;
   background-size: cover;
   background-position: left;
@@ -484,6 +484,7 @@ ul {
 .input-prompt {
   font-size: 2vh;
   font-weight: 100;
+  width: 100%;
   border: none;
   margin: 5vh 0 5vh 0;
 }
