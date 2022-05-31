@@ -36,6 +36,7 @@ const Main = () => {
                     <p className='info'>temperature: 0.6</p>
                     <p className='info'>output: 1</p>
                     <p className='info'>best of: 100</p>
+                    <span/>
                     <p className='info'>Prompt:</p>
                     <p className='input-prompt'>{promptInput}</p>
                     {/* <input className='input-prompt' type='text' value={promptInput} placeholder='Prompt' onChange={(e) => setPromptInput(e.target.value)}></input> */}
