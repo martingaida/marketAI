@@ -1,0 +1,52 @@
+@import '../../styles/_variables'
+@import '../../styles/_mixins'
+@import '../../styles/_typography'
+
+.home
+    @include flex-c
+    justify-content: center
+    padding-bottom: 0
+    overflow: hidden
+    background-size: cover
+    background-position: left
+    background-position-x: -15vw
+    background-repeat: no-repeat
+    animation: animate 3s linear
+
+.home h1 
+    cursor: pointer
+    font-size: 10vh
+
+.subtitle 
+    opacity: 0
+    font-size: 2.5vh
+    color: $font-color
+
+.subtitle
+    animation: animate 6s ease-in-out forwards
+
+
+@keyframes animate
+    0%
+        opacity: 0
+
+    5%
+        opacity: 0.05
+
+    10%
+        opacity: 0.1
+
+    75%
+        opacity: 0.75
+
+    100%
+        opacity: 1
+
+
+@media (min-width: 60em) 
+
+    .home
+        background-size: cover
+        background-position: center
+        background-position-x: 0
+        background-repeat: no-repeat

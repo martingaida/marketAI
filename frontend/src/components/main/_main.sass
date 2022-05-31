@@ -1,0 +1,79 @@
+@import '../../styles/_variables'
+@import '../../styles/_mixins'
+@import '../../styles/_typography'
+
+.main
+    @include flex-r
+    justify-content: flex-start
+    padding-bottom: 0
+    overflow: hidden
+    background-size: cover
+    background-position: left
+    background-position-x: -15vw
+    background-repeat: no-repeat
+    animation: animate 2s linear
+
+.main h1 
+    font-size: 10vh
+
+.menu-vertical
+    @include flex-cc
+    opacity: 0.75
+
+.li-active
+    border-bottom: 0.1vh solid $font-color
+
+.menu-vertical li:hover
+    font-size: 105%
+    cursor: pointer
+
+.main-content
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 100%
+    width: 100%
+    padding: 8vh 8vw 8vh 8vw
+    text-align: left
+
+.input-instrument
+    border: none
+    font-size: 10vh
+    font-weight: 700
+
+.input-instrument:focus
+    outline: none
+
+.about
+    animation: animate 2s linear
+
+.primary
+    @include flex-cc
+    height: 2vh
+    width: 5vw
+    cursor: pointer
+
+@keyframes animate
+    0%
+        opacity: 0
+
+    5%
+        opacity: 0.05
+
+    10%
+        opacity: 0.1
+
+    75%
+        opacity: 0.75
+
+    100%
+        opacity: 1
+
+
+@media (min-width: 60em) 
+
+    .main
+        background-size: cover
+        background-position: center
+        background-position-x: 0
+        background-repeat: no-repeat

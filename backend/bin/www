@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+// backend/bin/www
+const { port } = require('../config');
+
+const app = require('../app');
+
+// Start listening for connections
+app.listen(port, () => console.log(`Listening on port ${port}...`));

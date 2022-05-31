@@ -1,0 +1,426 @@
+/* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Sonsie+One&family=Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,700&display=swap");
+@import url("https://use.typekit.net/ctt3iia.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Sonsie+One&family=Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,700&display=swap");
+@import url("https://use.typekit.net/ctt3iia.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Sonsie+One&family=Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,700&display=swap");
+@import url("https://use.typekit.net/ctt3iia.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Sonsie+One&family=Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,700&display=swap");
+@import url("https://use.typekit.net/ctt3iia.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Sonsie+One&family=Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,700&display=swap");
+@import url("https://use.typekit.net/ctt3iia.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+#root,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* React specific #root reset (#root is between body and all the content) */
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 1.6vh;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.8);
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 4vh;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.8);
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 4vh;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.8);
+  scroll-behavior: smooth;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button {
+  all: unset;
+}
+
+#root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 75em;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: 105%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+  padding: 8vh 8vw 8vh 8vw;
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-weight: 700;
+  padding: 1vh 1.5vh;
+  margin: 1.5vh 0 1.5vh 1vh;
+  border-radius: 0.75vh;
+}
+
+.btn:hover {
+  font-size: 105%;
+  -webkit-box-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.15);
+          box-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.15);
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 0;
+  overflow: hidden;
+  background-size: cover;
+  background-position: left;
+  background-position-x: -15vw;
+  background-repeat: no-repeat;
+  -webkit-animation: animate 3s linear;
+          animation: animate 3s linear;
+}
+
+.home h1 {
+  cursor: pointer;
+  font-size: 10vh;
+}
+
+.subtitle {
+  opacity: 0;
+  font-size: 2.5vh;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.subtitle {
+  -webkit-animation: animate 6s ease-in-out forwards;
+          animation: animate 6s ease-in-out forwards;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.05;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.05;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 60em) {
+  .home {
+    background-size: cover;
+    background-position: center;
+    background-position-x: 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 0;
+  overflow: hidden;
+  background-size: cover;
+  background-position: left;
+  background-position-x: -15vw;
+  background-repeat: no-repeat;
+  -webkit-animation: animate 2s linear;
+          animation: animate 2s linear;
+}
+
+.main h1 {
+  font-size: 10vh;
+}
+
+.menu-vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.75;
+}
+
+.li-active {
+  border-bottom: 0.1vh solid rgba(0, 0, 0, 0.8);
+}
+
+.menu-vertical li:hover {
+  font-size: 105%;
+  cursor: pointer;
+}
+
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 8vh 8vw 8vh 8vw;
+  text-align: left;
+}
+
+.input-instrument {
+  border: none;
+  font-size: 10vh;
+  font-weight: 700;
+}
+
+.input-instrument:focus {
+  outline: none;
+}
+
+.about {
+  -webkit-animation: animate 2s linear;
+          animation: animate 2s linear;
+}
+
+.primary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2vh;
+  width: 5vw;
+  cursor: pointer;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.05;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 60em) {
+  .main {
+    background-size: cover;
+    background-position: center;
+    background-position-x: 0;
+    background-repeat: no-repeat;
+  }
+}
+/*# sourceMappingURL=main.css.map */
