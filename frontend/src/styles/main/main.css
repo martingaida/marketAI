@@ -473,6 +473,7 @@ ul {
 
 .input-instrument {
   border: none;
+  width: 100%;
   font-size: 10vh;
   font-weight: 700;
 }
@@ -484,7 +485,6 @@ ul {
 .input-prompt {
   font-size: 2vh;
   font-weight: 100;
-  width: 100%;
   border: none;
   margin: 5vh 0 5vh 0;
 }
