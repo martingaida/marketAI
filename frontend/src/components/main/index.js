@@ -8,7 +8,6 @@ const Main = () => {
     const [instrument, setInstrument] = useState('');
     const [generatedText, setGeneratedText] = useState('');
     const [loading, setLoading] = useState(false);
-    // const [promptInput, setPromptInput] = useState('')
 
     const promptInput = `Write current price of ${instrument} stock, whether it increased or decreased this week and how it performed compared to S&P500`;
 
@@ -45,7 +44,11 @@ const Main = () => {
                     {loading && <div className='loading-container'>
                         <div class='loading'><div></div><div></div><div></div><div></div></div>
                     </div>}
-                    <p>{generatedText}</p>
+                    {generatedText && <>
+                        <p className='info'>Result:</p>
+                        <span/>
+                    </>}
+                    <p className='generated-text'>{generatedText}</p>
                     <p className='footnote'>Martin Gaida 2022</p>
                 </div>
             </div>
