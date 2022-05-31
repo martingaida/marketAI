@@ -9,7 +9,7 @@ const Main = () => {
     const [generatedText, setGeneratedText] = useState('');
     const [loading, setLoading] = useState(false);
 
-    const promptInput = `Write current price of ${instrument} stock, whether it increased or decreased this week and how it performed compared to S&P500`;
+    const promptInput = `Write current price of ${instrument} stock, whether it increased or decreased this week, how it performed compared to S&P500 and whether it's a buy, hold or sell`;
 
     useEffect(() => {
 
@@ -40,7 +40,7 @@ const Main = () => {
                     <p className='input-prompt'>{promptInput}</p>
                     {/* <input className='input-prompt' type='text' value={promptInput} placeholder='Prompt' onChange={(e) => setPromptInput(e.target.value)}></input> */}
                     <input className='input-instrument' type='text' value={instrument} placeholder='Stock' onChange={(e) => setInstrument(e.target.value)}/>
-                    <button className='btn primary' onClick={() => dispatch(callOpenAI(promptInput), setLoading(true))}>GENERATE</button>
+                    <button className='btn primary' onClick={() => dispatch(callOpenAI(promptInput), setLoading(true), setGeneratedText(''))}>GENERATE</button>
                     {loading && <div className='loading-container'>
                         <div class='loading'><div></div><div></div><div></div><div></div></div>
                     </div>}
