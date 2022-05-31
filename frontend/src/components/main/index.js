@@ -6,7 +6,8 @@ const Main = () => {
     const dispatch = useDispatch();
     
     const [instrument, setInstrument] = useState('');
-    const [generatedText, setGeneratedText] = useState('')
+    const [generatedText, setGeneratedText] = useState('');
+    const [loading, setLoading] = useState(false);
     // const [promptInput, setPromptInput] = useState('')
 
     const promptInput = `Write current price of ${instrument} stock, whether it increased or decreased this week and how it performed compared to S&P500`;
@@ -24,7 +25,7 @@ const Main = () => {
         })
         const data = await response.json()
         
-        return setGeneratedText(data)
+        return (setLoading(false), setGeneratedText(data))
     }
 
     return (
@@ -40,9 +41,12 @@ const Main = () => {
                     <p className='input-prompt'>{promptInput}</p>
                     {/* <input className='input-prompt' type='text' value={promptInput} placeholder='Prompt' onChange={(e) => setPromptInput(e.target.value)}></input> */}
                     <input className='input-instrument' type='text' value={instrument} placeholder='Stock' onChange={(e) => setInstrument(e.target.value)}/>
-                    <button className='btn primary' onClick={() => dispatch(callOpenAI(promptInput))}>GENERATE</button>
+                    <button className='btn primary' onClick={() => dispatch(callOpenAI(promptInput), setLoading(true))}>GENERATE</button>
+                    {loading && <div className='loading-container'>
+                        <div class='loading'><div></div><div></div><div></div><div></div></div>
+                    </div>}
                     <p>{generatedText}</p>
-                <p className='footnote'>Martin Gaida 2022</p>
+                    <p className='footnote'>Martin Gaida 2022</p>
                 </div>
             </div>
         </>
