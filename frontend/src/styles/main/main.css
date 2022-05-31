@@ -373,6 +373,17 @@ ul {
   outline: none;
 }
 
+.input-prompt {
+  font-size: 2vh;
+  font-weight: 100;
+  border: none;
+  margin: 5vh 0 5vh 0;
+}
+
+.input-prompt:focus {
+  outline: none;
+}
+
 .about {
   -webkit-animation: animate 2s linear;
           animation: animate 2s linear;
@@ -392,9 +403,20 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 2vh;
-  width: 5vw;
+  min-height: 2vh;
+  min-width: 5vw;
   cursor: pointer;
+  margin: 5vh 0 5vh 0;
+}
+
+.footnote {
+  text-align: center;
+  font-size: 0.75vh;
+  margin: 10vh 0 0 0;
+}
+
+.info {
+  font-size: 1.5vh;
 }
 
 @keyframes animate {
