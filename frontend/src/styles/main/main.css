@@ -483,7 +483,7 @@ ul {
 }
 
 .input-prompt {
-  font-size: 2vh;
+  font-size: 2.5vh;
   font-weight: 100;
   border: none;
   margin: 5vh 0 5vh 0;
@@ -520,12 +520,12 @@ ul {
 
 .footnote {
   text-align: center;
-  font-size: 0.75vh;
+  font-size: 1.5vh;
   margin: 10vh 0 0 0;
 }
 
 .info {
-  font-size: 1.5vh;
+  font-size: 2vh;
 }
 
 .loading,
